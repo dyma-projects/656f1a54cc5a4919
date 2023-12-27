@@ -1,0 +1,17 @@
+<!---Liaison d'attribut avec []-->
+<input [type]="inputType" />
+<br />
+
+<!--Liaison d'évènement avec ()-->
+<button
+  classe="button"
+  [style.background]="color"
+  (mouseenter)="onChangeColor('green')"
+  (mouseleave)="onChangeColor('pink')"
+>
+  Click
+</button>
+<br />
+
+<!--L'interpolation de variable-->
+<p>La valeur de 2² est {{ square(2) }}</p>
